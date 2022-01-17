@@ -1,0 +1,61 @@
+\chapter{公式、图与表}
+
+\section{公式插入}
+本节为公式 \ref{eq:example} 插入测试。
+
+\begin{equation}
+\begin{split}
+I(X;Y)&=\mathcal{D}_{KL}(\mathbb{J}(X,Y)||\mathbb{P}(X)\otimes\mathbb{P}(Y)).
+\end{split}
+\label{eq:example}
+\end{equation}
+
+\section{图片插入}
+有的同学可能听说“\LaTeX{} 只能使用 eps 格式的图片”，甚至把 jpg 格式转为 eps。
+事实上，这种做法已经过时。
+而且每次编译时都要要调用外部工具解析 eps，导致降低编译速度。
+所以我们推荐矢量图直接使用 pdf 格式，位图使用 jpeg 或 png 格式。
+\begin{figure*}[ht]
+    \centering
+	\includegraphics[width=0.5\textwidth]{ouclogo}
+	\caption{中国海洋大学图片。}
+	\label{fig:ouc}
+\end{figure*}
+
+\section{表格插入}
+
+本校没有过多的表格格式要求，只要求表头在上即可。
+
+\begin{table}[htb]
+  \centering\small
+  \caption{表号和表题在表的正上方}
+  \label{tab:exampletable}
+  \begin{tabular}{cl}
+    \toprule
+    类型   & 描述                                       \\
+    \midrule
+    挂线表 & 挂线表也称系统表、组织表，用于表现系统结构 \\
+    无线表 & 无线表一般用于设备配置单、技术参数列表等   \\
+    无线表 & 无线表一般用于设备配置单、技术参数列表等   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{算法环境}
+这是算法演示。关于该宏包的具体用法，请阅读宏包的官方文档。这是算法演示。关于该宏包的具体用法，请阅读宏包的官方文档。这是算法演示。关于该宏包的具体用法，请阅读宏包的官方文档。
+
+
+\begin{algorithm}[htb]
+\small
+    \caption{发表论文}
+    \begin{algorithmic}[1] %每行显示行号  
+        \Require 脑子  
+        \While{Ture}
+            做实验
+            \If {巧了}
+                \State break
+            \EndIf
+        \EndWhile 
+        \end{algorithmic}  
+    \end{algorithm} 
+
