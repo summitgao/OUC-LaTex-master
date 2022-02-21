@@ -44,9 +44,9 @@
 \RequirePackage{dashrule}
 \RequirePackage{algorithm}
 \RequirePackage{algorithmicx}
-\RequirePackage{natbib}
+\RequirePackage[sort&compress]{natbib}
 \RequirePackage{bashful}
-\PassOptionsToPackage{sort&compress}{natbib}
+% \PassOptionsToPackage{sort&compress}{natbib}
 \ifouc@pdf
 \RequirePackage{hyperref}
 \else
