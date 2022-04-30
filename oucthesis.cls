@@ -1,7 +1,3 @@
-%%
-%% This is file `oucthesis.cls',
-%%
-
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{oucthesis}[OUC Thesis Template]
@@ -46,7 +42,6 @@
 \RequirePackage{algorithmicx}
 \RequirePackage[sort&compress]{natbib}
 \RequirePackage{bashful}
-% \PassOptionsToPackage{sort&compress}{natbib}
 \ifouc@pdf
 \RequirePackage{hyperref}
 \else
@@ -146,7 +141,6 @@
 }
 \ouc@setchinese
 
-
 % ===============================================
 % Page Format 
 
@@ -189,7 +183,7 @@
 \ctexset{
   chapter = {
     name        = {,},
-    format      = \centering\sffamily\bfseries\fontsize{16\bp@}{26.67\bp@}\selectfont,
+    format      = \centering\sffamily\fontsize{16\bp@}{26.67\bp@}\selectfont,
     nameformat  = {},
     number      = \thechapter,
     aftername   = \hspace{\ccwd},
@@ -255,7 +249,7 @@
   \vspace{1em}
 }{
   \par\null\par\noindent\hangindent=4\ccwd\relax
-  \sffamily\textbf{关键词：\ouc@keywords}
+  \sffamily{关键词：\ouc@keywords}
   \clearpage
   \pagestyle{title}
   \pagenumberingnoreset{arabic}
@@ -275,13 +269,14 @@
   \vspace{1em}
 }{
   \par\null\par\noindent\hangindent=5.3em\relax
-  \textbf{Key Words: \ouc@enkeywords}
+  \textbf{Keywords: \ouc@enkeywords}
   \clearpage
   \pagestyle{title}
   \pagenumberingnoreset{arabic}
 }
 
 % Toc
+\renewcommand{\contentsname}{目\zhspace[1]录}
 \renewcommand\tableofcontents{%
   \pagestyle{empty}
   \chapter*{\contentsname}%
@@ -320,7 +315,7 @@
   \setcounter{page}{1}
   \ctexset{
     chapter = {
-      format      = \sffamily\bfseries\fontsize{16\bp@}{26.67\bp@}\selectfont,
+      format      = \sffamily\fontsize{16\bp@}{26.67\bp@}\selectfont,
       aftername   = \zhspace[0.5],
       beforeskip  = 1em,
       afterskip   = 1.8em,
@@ -330,19 +325,19 @@
       format = \sffamily\fontsize{14\bp@}{25.67\bp@}\selectfont,
       aftername   = \zhspace[0.5],
       afterskip   = 1.2em,
-      fixskip     = true,
+      fixskip     = false,
     },
     subsection = {
       format    = \fontsize{12\bp@}{22\bp@}\selectfont,
       aftername   = \zhspace[0.5],
       afterskip   = 1.2em,
-      fixskip     = true,
+      fixskip     = false,
       indent    = \z@,
     },
     subsubsection = {
       format    = \rmfamily\fontsize{12\bp@}{22\bp@}\selectfont,
       aftername   = \zhspace[0.5],
-      fixskip     = true,
+      fixskip     = false,
       indent    = \ccwd,
     },
     paragraph = {
@@ -376,7 +371,7 @@
   \ctexset{
     chapter = {
       name        = {,},
-      format      = \centering\sffamily\bfseries\fontsize{14\bp@}{25.67\bp@}\selectfont,
+      format      = \centering\sffamily\fontsize{14\bp@}{25.67\bp@}\selectfont,
       nameformat  = {},
       number      = \thechapter,
       aftername   = \hspace{\ccwd},
