@@ -349,8 +349,8 @@
 }
 
 % Caption Stype
-\renewcommand{\thetable}{\thechapter-\arabic{table}}
-\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}~}
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}~}
 \counterwithin{algorithm}{chapter}
 \renewcommand{\thealgorithm}{\thechapter-\arabic{algorithm}}
 \floatname{algorithm}{算法}
