@@ -1,1 +1,0 @@
-The manuscript JSTARS-2022-00378 "SAR image change detection based on joint dictionary leanring with iterative adaptive threshold optimization" presents a JR-KSVD algorithm for increasing the quality of sparse representation for SAR image change detection. 
